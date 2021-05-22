@@ -1,14 +1,18 @@
+import { useForm } from "react-hook-form";
+
+//components
+import Header from "./Header";
+
+//css
 import "./App.css";
+
+//data
+import data from "./data.json";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        Learn React
-      </header>
+      <Header />
     </div>
   );
 }
