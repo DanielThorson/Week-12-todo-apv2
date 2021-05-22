@@ -8,11 +8,13 @@ import ToDoList from "./ToDoList";
 //css
 import "./App.css";
 
-//data
+//data from array of objects in the format of
+//"id": and "task": and "completion":
 import data from "./data.json";
-
 function App() {
+  //this returns the state toDoList and a function (setToDoList) to update it
   const [toDoList, setToDoList] = useState(data);
+  console.log(toDoList);
 
   return (
     <div className="App">

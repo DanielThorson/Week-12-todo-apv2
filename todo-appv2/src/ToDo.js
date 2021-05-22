@@ -4,7 +4,8 @@
 //And then giving it a prop of .task and making it return a div with just
 //the task description. It could be "todo.id" to return the id numbers
 const ToDo = ({ todo }) => {
-  console.log(todo.task);
+  console.log("Task description:",todo.task);
+  console.log("Task id:",todo.id);
   return <div>{todo.task}</div>;
 };
 
