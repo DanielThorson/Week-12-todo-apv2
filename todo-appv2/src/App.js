@@ -19,9 +19,9 @@ function App() {
 
   return (
     //passing toDoList as a prop into ToDoList component and setting it as a callback
-    <div className="App">
-      <div>
-        <h1>Lord Vader's ToDo List</h1>
+    <div className="App background">
+      <div className="container">
+        <h1 className='font-face-sj yellow-color'>Lord Vader's ToDo List</h1>
         <ToDoInputForm addToDo={addToDo} />
         <ToDoList toDoList={toDoList} />
       </div>

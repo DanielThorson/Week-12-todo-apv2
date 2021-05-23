@@ -6,7 +6,6 @@ import React, { useState } from "react";
 const ToDoForm = ({ addToDo }) => {
   const [todoInput, setTodoInput] = useState("");
 
-
   const handleChange = (todoiteration) => {
     setTodoInput(todoiteration.currentTarget.value);
   };
@@ -19,13 +18,8 @@ const ToDoForm = ({ addToDo }) => {
   };
   return (
     <form onSubmit={handleSubmit}>
-      <input
-        value={todoInput}
-        type="text"
-        onChange={handleChange}
-        required
-      />
-      <button>Submit</button>
+      <input value={todoInput} type="text" onChange={handleChange} required />
+      <button className="font-face-so">Submit</button>
     </form>
   );
 };

@@ -1,3 +1,129 @@
 .App {
   text-align: center;
 }
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.left {
+  text-align: left;
+}
+
+.background {
+  background: rgb(196, 196, 196);
+  background: linear-gradient(
+    90deg,
+    rgb(97, 97, 97) 0%,
+    rgb(219, 219, 219) 25%,
+    rgb(219, 219, 219) 75%,
+    rgb(97, 97, 97) 100%
+  );
+  padding-top: 20px;
+  height: 100%;
+  min-height: 1000px;
+}
+
+.container {
+  background: linear-gradient(
+    160deg,
+    rgba(253, 253, 253, 0.377) 0%,
+    rgba(32, 32, 32, 0.801) 25%,
+    rgba(0, 0, 0, 0.87) 50%,
+    rgba(14, 14, 14, 0.877) 75%,
+    rgba(8, 8, 8, 0.781) 85%,
+    rgba(187, 187, 187, 0.856) 94%
+  );
+  width: 600px;
+  min-height: 400px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border-bottom-left-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 30px 30px 5px rgba(39, 39, 39, 0.795);
+  margin-bottom: 600px;
+  padding-bottom: -100%;
+}
+
+.todo-cell {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.font-face-sj {
+  font-family: "Starjedi";
+}
+
+.font-face-so {
+  font-family: "Starjout";
+}
+
+.font-face-st {
+  font-family: "Starjhol";
+  font-weight: bolder;
+}
+
+.yellow-color {
+  color: rgb(255, 217, 0);
+}
+
+.black-color {
+  color: rgb(0, 0, 0);
+}
+
+.red-color {
+  color: rgb(255, 8, 8);
+}
+
+button {
+  color: black;
+  font-size: 10px;
+  background-color: rgb(255, 217, 0);
+  border-style: none;
+  height: 22px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+button:hover {
+  color: white;
+  box-shadow: 0px 0px 20px 5px rgba(255, 196, 0, 0.623);
+}
+input {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-color: rgb(255, 228, 187);
+}
+input:hover {
+  box-shadow: 0px 0px 20px 3px rgba(255, 196, 0, 0.623);
+  border-style: solid;
+  border-color: rgb(255, 247, 224);
+}
+input:focus {
+  outline: none;
+}
+
+h1 {
+  padding-top: 60px;
+  text-shadow: 0px 0px 20px rgba(255, 217, 0, 0.555);
+}
+
+.glow {
+  text-shadow: 0px 0px 5px rgb(255, 217, 0);
+}
+
+.light-glow {
+  text-shadow: 0px 0px 5px rgba(255, 196, 0, 0.726);
+}
+
+.padding-bottom {
+  padding-bottom: 100px;
+}

@@ -8,8 +8,8 @@ const ToDo = ({ todo }) => {
   // console.log("Task id:",todo.id);
 
   return (
-    <div>
-      <ul>
+    <div className="flex">
+      <ul className="App inline font-face-sj yellow-color light-glow">
         <li>{todo.task}</li>
       </ul>
     </div>

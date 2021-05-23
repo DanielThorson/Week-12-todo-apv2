@@ -7,10 +7,12 @@ import ToDo from "./ToDo.js";
 //assigning the prop 'todo'
 const ToDoList = ({ toDoList }) => {
   return (
-    <div>
-      {toDoList.map((todo) => {
-        return <ToDo todo={todo} />;
-      })}
+    <div className="App inline font-face-sj yellow-color light-glow todo-cell padding-bottom">
+      <div>
+        {toDoList.map((todo) => {
+          return <ToDo todo={todo} />;
+        })}
+      </div>
     </div>
   );
 };
