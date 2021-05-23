@@ -17,6 +17,7 @@ function App() {
   console.log(toDoList);
 
   return (
+    //passing toDoList as a prop into ToDoList component and setting it as a callback
     <div className="App">
       <Header />
       <ToDoList toDoList={toDoList} />
