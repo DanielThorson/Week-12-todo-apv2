@@ -1,17 +1,18 @@
 import React, { useState } from "react";
 
 // //the input state is set to nothing with the ""
-// //again a state and a function setTodoInput to update it
-
+// //again a variable (todoInput) and a function (setTodoInput) to update it
 const ToDoForm = ({ addToDo }) => {
   const [todoInput, setTodoInput] = useState("");
 
-  const handleChange = (todoiteration) => {
-    setTodoInput(todoiteration.currentTarget.value);
+  //event is triggered when values are entered in the input.
+  const handleChange = (event) => {
+    setTodoInput(event.currentTarget.value);
   };
 
-  const handleSubmit = (todoiteration) => {
-    todoiteration.preventDefault();
+  // gets current value of state
+  const handleSubmit = (event) => {
+    event.preventDefault();
     addToDo(todoInput);
     setTodoInput("");
     // console.log(todoInput);
